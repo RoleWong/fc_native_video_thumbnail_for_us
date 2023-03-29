@@ -1,4 +1,4 @@
-package com.fluttercavalry.fc_native_video_thumbnail_for_us
+package com.fluttercavalry.fc_native_video_thumbnail
 
 import android.graphics.Bitmap
 import android.media.ThumbnailUtils

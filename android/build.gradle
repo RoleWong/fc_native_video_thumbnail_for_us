@@ -1,4 +1,4 @@
-group 'com.fluttercavalry.fc_native_video_thumbnail_for_us'
+group 'com.fluttercavalry.fc_native_video_thumbnail'
 version '1.0-SNAPSHOT'
 
 buildscript {
