@@ -24,7 +24,7 @@
 #include <sstream>
 #include <string>
 
-namespace fc_native_video_thumbnail {
+namespace fc_native_video_thumbnail_for_us {
 
 // https://github.com/flutter/plugins/blob/main/packages/camera/camera_windows/windows/camera_plugin.cpp
 // Looks for |key| in |map|, returning the associated value if it is present, or
@@ -137,7 +137,7 @@ void FcNativeVideoThumbnailPlugin::RegisterWithRegistrar(
     flutter::PluginRegistrarWindows* registrar) {
   auto channel =
       std::make_unique<flutter::MethodChannel<flutter::EncodableValue>>(
-          registrar->messenger(), "fc_native_video_thumbnail",
+          registrar->messenger(), "fc_native_video_thumbnail_for_us",
           &flutter::StandardMethodCodec::GetInstance());
 
   auto plugin = std::make_unique<FcNativeVideoThumbnailPlugin>();
@@ -191,4 +191,4 @@ void FcNativeVideoThumbnailPlugin::HandleMethodCall(
   }
 }
 
-}  // namespace fc_native_video_thumbnail
+}  // namespace fc_native_video_thumbnail_for_us

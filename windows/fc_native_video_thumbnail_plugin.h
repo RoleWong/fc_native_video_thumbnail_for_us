@@ -6,7 +6,7 @@
 
 #include <memory>
 
-namespace fc_native_video_thumbnail {
+namespace fc_native_video_thumbnail_for_us {
 
 class FcNativeVideoThumbnailPlugin : public flutter::Plugin {
  public:
@@ -27,6 +27,6 @@ class FcNativeVideoThumbnailPlugin : public flutter::Plugin {
       std::unique_ptr<flutter::MethodResult<flutter::EncodableValue>> result);
 };
 
-}  // namespace fc_native_video_thumbnail
+}  // namespace fc_native_video_thumbnail_for_us
 
 #endif  // FLUTTER_PLUGIN_FC_NATIVE_VIDEO_THUMBNAIL_PLUGIN_H_

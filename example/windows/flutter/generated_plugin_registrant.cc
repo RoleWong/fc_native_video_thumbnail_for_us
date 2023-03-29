@@ -6,7 +6,7 @@
 
 #include "generated_plugin_registrant.h"
 
-#include <fc_native_video_thumbnail/fc_native_video_thumbnail_plugin_c_api.h>
+#include <fc_native_video_thumbnail_for_us/fc_native_video_thumbnail_plugin_c_api.h>
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
   FcNativeVideoThumbnailPluginCApiRegisterWithRegistrar(

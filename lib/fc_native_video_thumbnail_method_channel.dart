@@ -8,7 +8,7 @@ class MethodChannelFcNativeVideoThumbnail
     extends FcNativeVideoThumbnailPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('fc_native_video_thumbnail');
+  final methodChannel = const MethodChannel('fc_native_video_thumbnail_for_us');
 
   @override
   Future<void> getVideoThumbnail(

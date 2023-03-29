@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 3.14)
 
 # Project-level configuration.
-set(PROJECT_NAME "fc_native_video_thumbnail")
+set(PROJECT_NAME "fc_native_video_thumbnail_for_us")
 project(${PROJECT_NAME} LANGUAGES CXX)
 
 # This value is used when generating builds using this plugin, so it must
@@ -21,7 +21,7 @@ list(APPEND PLUGIN_SOURCES
 # Define the plugin library target. Its name must not be changed (see comment
 # on PLUGIN_NAME above).
 add_library(${PLUGIN_NAME} SHARED
-  "include/fc_native_video_thumbnail/fc_native_video_thumbnail_plugin_c_api.h"
+  "include/fc_native_video_thumbnail_for_us/fc_native_video_thumbnail_plugin_c_api.h"
   "fc_native_video_thumbnail_plugin_c_api.cpp"
   ${PLUGIN_SOURCES}
 )

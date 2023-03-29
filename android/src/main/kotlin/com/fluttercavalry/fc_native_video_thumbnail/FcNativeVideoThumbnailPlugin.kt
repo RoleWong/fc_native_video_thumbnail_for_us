@@ -1,4 +1,4 @@
-package com.fluttercavalry.fc_native_video_thumbnail
+package com.fluttercavalry.fc_native_video_thumbnail_for_us
 
 import android.graphics.Bitmap
 import android.media.ThumbnailUtils
@@ -28,7 +28,7 @@ class FcNativeVideoThumbnailPlugin: FlutterPlugin, MethodCallHandler {
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     val taskQueue =
       flutterPluginBinding.binaryMessenger.makeBackgroundTaskQueue()
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "fc_native_video_thumbnail", StandardMethodCodec.INSTANCE,
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "fc_native_video_thumbnail_for_us", StandardMethodCodec.INSTANCE,
       taskQueue)
     channel.setMethodCallHandler(this)
   }

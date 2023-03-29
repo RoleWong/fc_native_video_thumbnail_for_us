@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:fc_native_video_thumbnail/fc_native_video_thumbnail.dart';
+import 'package:fc_native_video_thumbnail_for_us/fc_native_video_thumbnail_for_us.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';

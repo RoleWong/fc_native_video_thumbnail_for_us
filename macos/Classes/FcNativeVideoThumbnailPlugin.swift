@@ -3,11 +3,11 @@ import FlutterMacOS
 
 public class FcNativeVideoThumbnailPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "fc_native_video_thumbnail", binaryMessenger: registrar.messenger)
+    let channel = FlutterMethodChannel(name: "fc_native_video_thumbnail_for_us", binaryMessenger: registrar.messenger)
     let instance = FcNativeVideoThumbnailPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
-  
+
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     guard let args = call.arguments as? Dictionary<String, Any> else {
       result(FlutterError(code: "InvalidArgsType", message: "Invalid args type", details: nil))
@@ -22,10 +22,10 @@ public class FcNativeVideoThumbnailPlugin: NSObject, FlutterPlugin {
       let height = args["height"] as! Int
       let outputString = args["type"] as! String
       let keepAspectRatio = args["keepAspectRatio"] as! Bool
-      
+
       let quality = args["quality"] as? Int;
       let outputType = outputString == "png" ? OutputType.png : OutputType.jpeg
-      
+
       DispatchQueue.global().async {
         do {
           try ImageUtil.getVideoThumbnail(src: srcFile, dest: destFile, width: CGFloat(width), height: CGFloat(height), keepAspectRatio: keepAspectRatio, outType: outputType, quality: quality)
@@ -42,7 +42,7 @@ public class FcNativeVideoThumbnailPlugin: NSObject, FlutterPlugin {
           }
         }
       }
-      
+
     default:
       result(FlutterMethodNotImplemented)
     }

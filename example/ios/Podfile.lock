@@ -30,7 +30,7 @@ PODS:
   - DKPhotoGallery/Resource (0.0.17):
     - SDWebImage
     - SwiftyGif
-  - fc_native_video_thumbnail (0.0.1):
+  - fc_native_video_thumbnail_for_us (0.0.1):
     - Flutter
   - file_picker (0.0.1):
     - DKImagePickerController/PhotoGallery
@@ -42,7 +42,7 @@ PODS:
   - SwiftyGif (5.4.3)
 
 DEPENDENCIES:
-  - fc_native_video_thumbnail (from `.symlinks/plugins/fc_native_video_thumbnail/ios`)
+  - fc_native_video_thumbnail_for_us (from `.symlinks/plugins/fc_native_video_thumbnail_for_us/ios`)
   - file_picker (from `.symlinks/plugins/file_picker/ios`)
   - Flutter (from `Flutter`)
 
@@ -54,8 +54,8 @@ SPEC REPOS:
     - SwiftyGif
 
 EXTERNAL SOURCES:
-  fc_native_video_thumbnail:
-    :path: ".symlinks/plugins/fc_native_video_thumbnail/ios"
+  fc_native_video_thumbnail_for_us:
+    :path: ".symlinks/plugins/fc_native_video_thumbnail_for_us/ios"
   file_picker:
     :path: ".symlinks/plugins/file_picker/ios"
   Flutter:
@@ -64,7 +64,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
   DKPhotoGallery: fdfad5125a9fdda9cc57df834d49df790dbb4179
-  fc_native_video_thumbnail: acf173eee42a60561203851e02b38a5202adc206
+  fc_native_video_thumbnail_for_us: acf173eee42a60561203851e02b38a5202adc206
   file_picker: ce3938a0df3cc1ef404671531facef740d03f920
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   SDWebImage: 9c36e66c8ce4620b41a7407698dda44211a96764
