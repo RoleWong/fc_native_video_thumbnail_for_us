@@ -10,19 +10,19 @@ project(${PROJECT_NAME} LANGUAGES CXX)
 
 # This value is used when generating builds using this plugin, so it must
 # not be changed
-set(PLUGIN_NAME "fc_native_video_thumbnail_plugin")
+set(PLUGIN_NAME "fc_native_video_thumbnail_for_us_plugin")
 
 # Any new source files that you add to the plugin should be added here.
 list(APPEND PLUGIN_SOURCES
-  "fc_native_video_thumbnail_plugin.cpp"
-  "fc_native_video_thumbnail_plugin.h"
+  "fc_native_video_thumbnail_for_us_plugin.cpp"
+  "fc_native_video_thumbnail_for_us_plugin.h"
 )
 
 # Define the plugin library target. Its name must not be changed (see comment
 # on PLUGIN_NAME above).
 add_library(${PLUGIN_NAME} SHARED
-  "include/fc_native_video_thumbnail_for_us/fc_native_video_thumbnail_plugin_c_api.h"
-  "fc_native_video_thumbnail_plugin_c_api.cpp"
+  "include/fc_native_video_thumbnail_for_us/fc_native_video_thumbnail_for_us_plugin_c_api.h"
+  "fc_native_video_thumbnail_for_us_plugin_c_api.cpp"
   ${PLUGIN_SOURCES}
 )
 
@@ -47,7 +47,7 @@ target_link_libraries(${PLUGIN_NAME} PRIVATE flutter flutter_wrapper_plugin)
 # List of absolute paths to libraries that should be bundled with the plugin.
 # This list could contain prebuilt libraries, or libraries created by an
 # external build triggered from this build file.
-set(fc_native_video_thumbnail_bundled_libraries
+set(fc_native_video_thumbnail_for_us_bundled_libraries
   ""
   PARENT_SCOPE
 )

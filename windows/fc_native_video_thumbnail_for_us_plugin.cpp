@@ -1,4 +1,4 @@
-#include "fc_native_video_thumbnail_plugin.h"
+#include "fc_native_video_thumbnail_for_us_plugin.h"
 
 // This must be included before many other Windows headers.
 #include <windows.h>
@@ -191,4 +191,4 @@ void FcNativeVideoThumbnailPlugin::HandleMethodCall(
   }
 }
 
-}  // namespace fc_native_video_thumbnail_for_us
+}  // namespace fc_native_video_thumbnail

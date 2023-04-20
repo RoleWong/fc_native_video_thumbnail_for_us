@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-FLUTTER_PLUGIN_EXPORT void FcNativeVideoThumbnailPluginCApiRegisterWithRegistrar(
+FLUTTER_PLUGIN_EXPORT void FcNativeVideoThumbnailForUsPluginCApiRegisterWithRegistrar(
     FlutterDesktopPluginRegistrarRef registrar);
 
 #if defined(__cplusplus)
